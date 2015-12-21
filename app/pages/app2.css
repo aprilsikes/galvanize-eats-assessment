@@ -9,6 +9,7 @@ html, body {
 
 body {
   margin: 0;
+  background-color: #C48423;
 }
 
 header {
@@ -19,4 +20,71 @@ header {
   color: #FFFFFF;
   font-family: sans-serif;
   font-weight: lighter;
+}
+
+#container {
+  margin: 0 auto;
+  height: 90%;
+  width: 75%;
+  padding-bottom: 25px;
+}
+
+#main {
+  height: 50%;
+  width: 60%;
+}
+
+label {
+  display: block;
+}
+
+#items {
+  border: solid 2px black;
+  float: left;
+  width: 70%;
+  height: 40%;
+  background-color: #FFFFFF;
+}
+
+#quan {
+  height: 25px;
+  width: 40px;
+  background-color: #FFFFFF;
+}
+
+#add {
+  background-color: #5973A6;
+  height: 30px;
+  width: 100px;
+  color: #FFFFFF;
+}
+
+#name, #phone, #address {
+  background-color: #FAFFBD;
+}
+
+#deliver {
+  background-color: #59A673;
+  height: 30px;
+  width: 225px;
+  color: #FFFFFF;
+}
+
+#results {
+  border: solid 2px blue;
+  width: 40%;
+  height: 100%;
+  float: right;
+  background-color: #FFFFFF;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: -25px;
+  height: 25px;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
 }

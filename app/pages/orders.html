@@ -7,7 +7,39 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
     <header>Galvanize Eats</header>
+
+    <div id="container">
+      <section id="main">
+        <article id="items"></article>
+        <label id="quan">Quantity<input type="text" name="quantity"></label>
+        <p>
+          <button id="add" name="addItem">Add Item</button>
+        </p>
+      </section>
+
+      <section id="text">
+        <form>
+          <label for="name">Name</label>
+            <input id="name"type="text" name="name">
+
+          <label for="phone">Phone Number</label>
+            <input id="phone" type="text" name="phone">
+
+          <label for="address">Address</label>
+            <input id="address" type="text" name="address">
+
+          <input id="deliver" type="submit" value="Deliver It!">
+        </form>
+      </section>
+
+      <section id="results">
+        <article id="total"></article>
+      </section>
+  </div>
+
+  <footer>&copy Galvanize, 2015   &#9884;   Denver, Colorado</footer>
 
   </body>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
