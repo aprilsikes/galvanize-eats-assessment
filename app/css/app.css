@@ -4,6 +4,11 @@
 
 html, body {
   height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
 }
 
 header {
@@ -32,8 +37,39 @@ header {
 
 #bottom {
   height: 25%;
+  padding-bottom: 25px;
+}
+
+#left, #middle, #right {
+  float: left;
+  display: inline-block;
+  height: 75%;
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+#left {
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+#right {
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+#middle {
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 footer {
-  position: fixed;
+  position: absolute;
+  bottom: 0;
+  margin-top: -25px;
+  height: 25px;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
 }
