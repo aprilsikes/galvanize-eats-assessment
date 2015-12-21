@@ -1,0 +1,9 @@
+{
+  "firebase": "gal-eats-april-sikes",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
