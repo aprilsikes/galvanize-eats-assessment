@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Open Sans;
 }
 
 html, body {
@@ -23,6 +24,7 @@ header {
 
 #top {
   height: 75%;
+  background-image: url(media/restaurant-hero-image.jpg);
 }
 
 #tagline {
@@ -35,9 +37,23 @@ header {
   transform: translateY(-50%);
 }
 
+button {
+  background-color: #59A673;
+  height: 60px;
+  width: 75%;
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  background: #356345;
+}
+
 #bottom {
   height: 25%;
   padding-bottom: 25px;
+  margin: auto;
 }
 
 #left, #middle, #right {
@@ -72,4 +88,5 @@ footer {
   width: 100%;
   background-color: #000000;
   color: #FFFFFF;
+  text-align: center;
 }
