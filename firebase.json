@@ -1,6 +1,6 @@
 {
   "firebase": "gal-eats-april-sikes",
-  "public": "public",
+  "public": ".",
   "ignore": [
     "firebase.json",
     "**/.*",
