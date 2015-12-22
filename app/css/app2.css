@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  margin: 0;
+  /*margin: 0;*/
   background-color: #C48423;
 }
 
@@ -23,7 +23,7 @@ header {
 }
 
 #container {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   height: 90%;
   width: 75%;
   padding-bottom: 25px;
@@ -39,6 +39,16 @@ label {
 }
 
 #items {
+  border: solid 2px black;
+  float: left;
+  width: 70%;
+  height: 40%;
+  background-color: #FFFFFF;
+}
+
+#selector {
+  /*width: 100%;
+  height: 100%;*/
   border: solid 2px black;
   float: left;
   width: 70%;
@@ -75,6 +85,13 @@ label {
   width: 40%;
   height: 100%;
   float: right;
+  background-color: #FFFFFF;
+}
+
+#total {
+  border: solid 2px blue;
+  width: 40%;
+  height: 40%;
   background-color: #FFFFFF;
 }
 
