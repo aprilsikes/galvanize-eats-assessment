@@ -12,21 +12,23 @@
 
     <div id="container">
       <section id="main">
-        <select id="selector" name="sel" multiple>
-            <!-- <option class="burgers" disabled>Burgers</option>
-            <option class="pizza" disabled>Pizza</option> -->
-        </select>
+        <form action="" id="foodForm" onsubmit="return false;">
+          <select id="selector" name="sel" multiple>
+              <!-- <optgroup="burgers" disabled>Burgers</option>
+              <option class="pizza" disabled>Pizza</option> -->
+          </select>
 
-        <label for="quan">Quantity<input min="1" max="99" value="1" type="text" id="quan" name="quantity"></label>
-        <p>
-          <button id="add" name="addItem">Add Item</button>
-        </p>
+          <label for="quan">Quantity<input min="1" max="99" value="1" type="text" id="quan" name="quantity"></label>
+          <p>
+            <button id="add" name="addItem">Add Item</button>
+          </p>
+        </form>
       </section>
 
       <section id="text">
-        <form>
+        <form action="" id="infoForm">
           <label for="name">Name</label>
-            <input id="name"type="text" name="name">
+            <input id="name" type="text" name="name">
 
           <label for="phone">Phone Number</label>
             <input id="phone" type="text" name="phone">
