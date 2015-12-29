@@ -15,8 +15,9 @@ $(document).ready(function() {
         $("#selector").append("<option value='" +foodPrice+ "'>" +foodName+ " " +foodPrice+ "</option>");
       }
 
+      var arr = [];
+      // var arr3 = [];
       $("#add").click(function() {
-        var arr = [];
         var arr2 = [];
         $("select :selected").clone().appendTo("#order");
 
@@ -36,8 +37,8 @@ $(document).ready(function() {
     });
 });
 
-var total = 0;
 function getSelectedSum(array) {
+  var total = 0;
   for (var i = 0; i < array.length; i++) {
     total += parseFloat(array[i]);
   } return total.toFixed(2);
