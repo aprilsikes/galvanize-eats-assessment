@@ -35,6 +35,12 @@ $(document).ready(function() {
     getter.fail(function(response) {
       console.log("fail");
     });
+
+    var poster = $.ajax ({
+      url:  "https://galvanize-eats-api.herokuapp.com/orders",
+      method: "POST",
+      
+    })
 });
 
 function getSelectedSum(array) {
