@@ -27,7 +27,13 @@ $(document).ready(function() {
           for (var i = 0; i < arr.length; i++) {
             arr2.push(Number(arr[i]));
         } console.log(arr2);
-        $("#total").html(getSelectedSum(arr2));
+        $("#total").append("Subtotal " + getSelectedSum(arr2) + "\n");
+        var tax = ((getSelectedSum(arr2)) * .083).toFixed(2);
+        console.log(tax);
+        $("#total").append("Tax " + tax + "\n");
+        var grandTotal = parseFloat(getSelectedSum(arr2)) + parseFloat(tax);
+        console.log(grandTotal);
+        $("#total").append("Grand Total " + grandTotal);
         console.log(getSelectedSum(arr2));
       });
     });
@@ -39,7 +45,7 @@ $(document).ready(function() {
     var poster = $.ajax ({
       url:  "https://galvanize-eats-api.herokuapp.com/orders",
       method: "POST",
-      
+
     })
 });
 

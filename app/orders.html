@@ -18,7 +18,8 @@
               <option class="pizza" disabled>Pizza</option> -->
           </select>
 
-          <label for="quan">Quantity<input min="1" max="99" value="1" type="text" id="quan" name="quantity"></label>
+          <label for="quan">Quantity</label>
+            <input min="1" max="99" value="1" type="text" id="quan" name="quantity"></label>
           <p>
             <button id="add" name="addItem">Add Item</button>
           </p>
@@ -36,17 +37,23 @@
           <label for="address">Address</label>
             <input id="address" type="text" name="address">
 
-          <input id="deliver" type="submit" value="Deliver It!">
+          <p>
+            <input id="deliver" type="submit" value="Deliver It!">
+          </p>
         </form>
       </section>
 
-      <section id="order">
-      </section>
-      <section id="total">
-      </section>
-  </div>
+      <aside>
+        <form id="orderTotal">
+          <div id="order">
+          </div>
+          <div id="total">
+          </div>
+        </form>
+      </aside>
+    </div>
 
-  <footer>&copy Galvanize, 2015   &#9884;   Denver, Colorado</footer>
+    <footer>&copy Galvanize, 2015   &#9884;   Denver, Colorado</footer>
 
   </body>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
