@@ -14,6 +14,14 @@
       <section id="main">
         <form action="" id="foodForm" onsubmit="return false;">
           <select id="selector" name="sel" multiple>
+            <optgroup label="Burgers" id="burgers">
+
+            </optgroup>
+            <optgroup label="Pizza" id="pizza">
+
+            </optgroup>
+            <!-- <option class="heada" id="burgers" disabled>Burgers</option>
+            <option class="heada" id="pizza" disabled>Pizza</option> -->
               <!-- <optgroup="burgers" disabled>Burgers</option>
               <option class="pizza" disabled>Pizza</option> -->
           </select>
@@ -48,6 +56,11 @@
           <div id="order">
           </div>
           <div id="total">
+            <ul>
+              <li>Subtotal<p id="sub">0.00</p></li>
+              <li>Tax<p id="foodTax">0.00</p></li>
+              <li>Grand Total<p id="gTotal">0.00</p></li>
+            </ul>
           </div>
         </form>
       </aside>

@@ -12,7 +12,13 @@ $(document).ready(function() {
       for (var i = 0; i < items.length; i++) {
         var foodName =  items[i].name;
         var foodPrice = items[i].price;
-        $("#selector").append("<option value='" +foodPrice+ "'>" +foodName+ " " +foodPrice+ "</option>");
+        var foodType = items[i].type;
+        if (foodType === "burger") {
+          $("#burgers").append("<option value='" +foodPrice+ "'>" +foodName+ " " +foodPrice+ "</option>")
+        } else {
+          $("#pizza").append("<option value='" +foodPrice+ "'>" +foodName+ " " +foodPrice+ "</option>")
+        }
+        // $("#selector").append("<option value='" +foodPrice+ "'>" +foodName+ " " +foodPrice+ "</option>");
       }
 
       var arr = [];
@@ -27,13 +33,13 @@ $(document).ready(function() {
           for (var i = 0; i < arr.length; i++) {
             arr2.push(Number(arr[i]));
         } console.log(arr2);
-        $("#total").append("Subtotal " + getSelectedSum(arr2) + "\n");
+        $("#sub").html(getSelectedSum(arr2));
         var tax = ((getSelectedSum(arr2)) * .083).toFixed(2);
         console.log(tax);
-        $("#total").append("Tax " + tax + "\n");
+        $("#foodTax").html(tax);
         var grandTotal = parseFloat(getSelectedSum(arr2)) + parseFloat(tax);
         console.log(grandTotal);
-        $("#total").append("Grand Total " + grandTotal);
+        $("#gTotal").html(grandTotal.toFixed(2));
         console.log(getSelectedSum(arr2));
       });
     });
